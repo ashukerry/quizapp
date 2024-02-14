@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: "postgres:latest"
+    environment:
+      - "POSTGRES_DB=quizdatabase"
+      - "POSTGRES_PASSWORD=abcd"
+      - "POSTGRES_USER=ashu-quiz"
+    ports:
+      - "5433:5432"
